@@ -1,0 +1,41 @@
+{
+    "cale_baza": "resurse/imagini/erori",
+    "eroare_default":{
+        "titlu":"Eroare !!!",
+        "text": "A survenit eroare.",
+        "imagine":"interzis.png"
+    },
+    "info_erori": [
+        {
+            "identificator":404,
+            "status":true,
+            "titlu":"404 - Not Found",
+            "text": "Pagina nu a putut fi gasita!",
+            "imagine":"lupa.png"
+        },
+        {
+            "identificator":403,
+            "status":true,
+            "titlu":"403 - Forbidden",
+            "text": "Lipsa permisiune de acces!",
+            "imagine":"interzis.png"
+        },
+        
+        {
+            "identificator":1,
+            "status":false,
+            "titlu":"Site în lucru",
+            "text": "Reveniti mai tarziu!",
+            "imagine":"interzis.png"
+        },
+        
+        {
+            "identificator":2,
+            "status":false,
+            "titlu":"Eroare baza date",
+            "text": "Reveniti mai tarziu!",
+            "imagine":"interzis.png"
+        }
+    ]
+}
+  

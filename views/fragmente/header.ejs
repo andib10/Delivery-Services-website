@@ -1,0 +1,38 @@
+<header>
+    <h1 id="titlu">AND Courier</h1>
+    <button id = "tema" class="btn btn-primary">Schimba tema<i class="fa-solid fa-sun"></i><i class="fa-solid fa-moon"></i></button>
+
+<nav>
+    <label id="hamburger" for="ch-menu">
+        <img src="resurse/imagini/Hamburger_icon_alb.png" alt="meniu">
+    </label>
+    <input id="ch-menu" type ="checkbox">
+
+    <ul class="meniu">
+        <li><div><a href="/index#div1"><i class="fa-solid fa-house"></i><span class="text">Acasa</span></a></div>
+        <li><div>Servicii</div>                 
+            <ul>
+                <li><a href="/servicii#urmarire">Urmarire</a></li>
+                <li><a href="/servicii#expediere">Expediere</a></li>
+            </ul>
+        </li>
+
+        <li><div>Despre noi</div>
+            <ul>
+                <li><a href="/despre#istoric">Istoric</a></li>
+                <li><a href="/despre#locatii">Locatii</a></li>
+            </ul>
+        </li>
+        <li><a href="/contact#contact">Contact</a></li>
+        <li><a href="/business#business">Business</a></li>
+        <li><div>Produse</div>
+            <ul>
+                <li><a href="/produse">Toate</a></li>
+                <% for (opt of locals.optiuniMeniu) { %>
+                    <li><a href="<%- "/produse?tip=" + opt.unnest%>"> <%- opt.unnest%></a></li>
+                <% } %> 
+            </ul>
+        </li>
+    </ul>
+</nav>
+</header>

@@ -1,0 +1,72 @@
+{
+	"cale_galerie":"resurse/imagini/galerie",
+	"imagini": [
+		{
+			"fisier":"1.jpg",
+			"titlu":"Delivery",
+			"descriere":"Verificare colet",
+			"timp":"00:00-23:00"
+		},
+		{
+			"fisier":"2.jpg",
+			"titlu":"Delivery",
+			"descriere":"Organizare colete",
+			"timp":"00:00-23:00"
+			
+		},
+		{
+			"fisier":"3.jpg",
+			"titlu":"Delivery",
+			"descriere":"Confirmare livrare",
+			"timp":"00:00-23:00"
+		},
+		{
+			"fisier":"4.jpg",
+			"titlu":"Delivery",
+			"descriere":"Delivery man",
+			"timp":"00:00-23:00"
+		},
+		{
+			"fisier":"5.jpg",
+			"titlu":"Delivery",
+			"descriere":"Livrare",
+			"timp":"00:00-23:00"
+		},
+		{
+			"fisier":"6.jpg",
+			"titlu":"Delivery",
+			"descriere":"Livrare",
+			"timp":"00:00-23:00"
+		},
+		{
+			"fisier":"7.jpg",
+			"titlu":"Delivery",
+			"descriere":"Delivery man",
+			"timp":"00:00-23:00"
+		},
+		{
+			"fisier":"8.jpg",
+			"titlu":"Delivery",
+			"descriere":"Delivery man",
+			"timp":"00:00-23:00"
+		},
+		{
+			"fisier":"9.jpg",
+			"titlu":"Delivery",
+			"descriere":"Delivery man",
+			"timp":"00:00-23:00"
+		},
+		{
+			"fisier":"1.jpg",
+			"titlu":"Delivery",
+			"descriere":"Verificare colet",
+			"timp":"00:00-23:00"
+		},
+		{
+			"fisier":"1.jpg",
+			"titlu":"Delivery",
+			"descriere":"Verificare colet",
+			"timp":"00:00-23:00"
+		}
+	]
+}

@@ -1,0 +1,34 @@
+$var:1rem;
+@use '../../node_modules/bootstrap/scss/bootstrap.scss' with (
+    $primary: #47D1FF,
+    $secondary: #3BABD1,
+
+    $table-caption-color: #5C8D9E,
+    $link-color:  #5C8D9E,
+
+    $container-max-widths: (
+        sm: 530px,
+        md: 710px,
+        lg: 950px,
+        xl: 1040px,
+        xxl: 1220px
+    ),
+
+    $border-radius: .37rem ,
+    $border-radius-sm: .25rem ,
+    $border-radius-lg: .5rem ,
+    $border-radius-xl: 1rem ,
+    $border-radius-2xl: 2rem ,
+    $border-radius-pill: 50rem ,
+
+    
+
+    $h1-font-size: $var * 3 ,
+    $h2-font-size: $var * 2.3 ,
+    $h3-font-size: $var * 2 ,
+    $h4-font-size: $var * 1.7 ,
+
+    $font-family-code: serif,
+
+    $hr-opacity: .24 ,
+);

@@ -1,0 +1,113 @@
+
+
+    #banner{
+          position: absolute;
+          display: inline-block;
+          top: 10%;
+          width: 100%;
+          height: 20px;
+          right: 0;
+          overflow: visible;
+      }
+      #banner::after{
+          content: "Acesta este un proiect scolar!";
+          position: absolute;
+          font-size: 1rem;
+          right: 0;
+          border: 5px double black;
+          width: 50%;
+          height: 35px;
+          display: inline-block;
+      }
+  
+    #grid-pagina{
+          font-size: 10px;
+          display:block; /* :/ */
+          }
+  
+      
+    #watermark{
+      display: block;
+      position: fixed;
+      color:black;
+  
+      top: 50%;
+      left: 50%;
+  
+      width: 100%;
+      height: 100%;
+    }
+    #watermark::after{
+  
+      width: 60%;
+      height:10%;
+      text-align: center;
+  
+      margin-top: -5%;
+      margin-left: -30%;
+      
+      opacity:0.3;
+      padding:3px;
+      display: block;
+      border:2px solid black;
+      content:"Copyright Andi \a Brinceanu";
+      white-space: pre;
+    }
+  
+  
+    video, .iframes, figure, #link-top {
+      display: none;
+    }
+    #tel, #adresa, #mail, #skype, .link {
+      text-decoration: none;
+    }
+  
+    h1 {
+      text-align: center;
+      margin-top: 50%;
+  
+    }
+    #titlu-tabel {
+        font-size: 1rem;
+        margin-top: 10%;
+        text-align: left;
+    }
+  
+    ul.meniu {
+      page-break-after: always;
+      display:block;
+      list-style-type:circle;
+      padding: 50px;
+      }
+
+      ul.meniu>li{
+        overflow: visible;
+        border: none;
+        width: 100%;
+        text-align: left;
+        height: auto;
+    
+    }
+
+    ul.meniu ul{
+        list-style-type: disc;
+        z-index: 10;
+        position: relative;
+        left:-1px;
+        padding-left: 20px; 
+        margin: 0;
+        transform-origin: 50% 0;
+
+    }
+
+    /* #grid-pag div:nth-child(5){
+		
+		page-break-before:always;
+	} */
+  
+  
+    footer{
+      page-break-before: always;
+    }
+  
+  

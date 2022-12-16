@@ -1,0 +1,254 @@
+#titlu{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: var(--culoare3);
+  font-size: 3rem;
+}
+address a{
+  color: var(--culoare1);
+}
+small {
+  color: var(--culoare1);
+}
+
+
+/* link top  */
+#link-top{
+  position:fixed;
+  bottom:0.3em;
+  opacity:0.5;
+  right:0.3em;
+  width:3rem;
+  height: 3rem;
+
+  /* centrare oriziontala si verticala - div in div  */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+
+  border:1px solid var(--culoare4);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background: var(--culoare1);
+  
+  box-shadow: inset 0px 0px 8px 4px var(--culoare4);
+}
+
+#sageata{
+  font-size: 3rem;
+  color: var(--culoare5);
+}
+
+#link-top {
+  transition: all 1s linear;
+}
+
+#link-top #sageata{
+  transition: all 1s linear;
+}
+
+#link-top:hover{
+  background-color: var(--culoare1);
+  opacity: 1;
+}
+
+#link-top:hover #sageata{
+  font-size:4rem;
+  color: var(--culoare3);
+}
+
+
+
+.taburi-iframe a{
+  display: block;
+  width:100px;
+  height:40px;
+  border: 5px solid var(--culoare1);
+  border-style: double;
+  border-left: none;
+  text-align: center;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  
+}
+
+
+/* stilizare iframe  */
+
+.iframes {
+  display: flex;
+  flex-direction: row;
+}
+
+.taburi-iframe {
+  width:100%;
+}
+
+.taburi-iframe a{
+  background-color: var(--culoare5);
+  text-align: right;
+  padding-right: 10px;
+}
+
+
+.taburi-iframe a:hover {
+  animation-name: animatie_frame;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  background-color: var(--culoare2);
+}
+
+@keyframes animatie_frame {  
+  100% {
+    width:20%;
+  }
+}
+
+
+
+/* tabel  */
+#tabelescu, #tabelescu td, #tabelescu th{
+	border: 1px solid black;
+	padding: 0.2em;
+  border-collapse: collapse;
+}
+#tabelescu{
+  caption-side:bottom;
+}
+.cont{
+  padding: 8%;
+}
+
+#tabelescu th{
+  border-bottom:3px solid black !important;
+}
+#tabelescu tfoot td{
+  border-top:3px solid black !important;
+}
+
+
+#tabelescu td:nth-child(odd){
+  border:2px solid var(--culoare3);
+}
+#tabelescu td:nth-child(even){
+  border:2px solid var(--culoare4);
+}
+
+#tabelescu th:nth-child(odd){
+  border:2px solid var(--culoare3);
+}
+#tabelescu th:nth-child(even){
+  border:2px solid var(--culoare4);
+}
+
+#tabelescu tr:hover{
+  transition: all 0.5s linear;
+}
+
+
+#tabelescu tr:hover{
+  box-shadow: inset 0px 0px 8px 4px var(--culoare3);
+}
+
+@media screen and (max-width:700px) {
+  div.cont {
+    overflow-x: auto;
+    white-space:nowrap;
+  }
+}
+
+
+
+
+::cue{
+  background: white;
+  opacity: 0.3;
+  color: var(--culoare3);
+}
+
+#watermark, #baneer{
+  display:none;
+}
+
+
+
+
+
+@page {
+  size: A4 portrait;
+  margin-bottom: 2cm;
+  margin-top: 2cm;
+  counter-increment: page;
+    
+}
+@page:left{
+
+  margin-left: 2cm;
+  margin-right: 1cm;
+  border-radius: 20cm;
+}
+@page:right{
+
+  margin-right: 2cm;
+  margin-left: 1cm;
+}
+
+.videoo {
+  text-align: center;
+}
+
+/* stilizare hr  */
+hr {
+  border: 1px solid black;
+  border-radius: 6px;
+  width: 60%;
+  height:10px;
+  margin: auto;
+  
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--culoare1),
+    var(--culoare1) 8%,
+    var(--culoare3) 8%,
+    var(--culoare3) 24%
+  );
+}
+
+/* reflexie  */
+#text-reflectat{
+	position:absolute;
+	left:0;
+	top:100%;
+	transform-origin:0 0;
+	/*conetaza ordinea transformarilor!*/
+	transform: rotateX(180deg) skew(-45deg) scaleY(0.5) translate(10px,-25px); 
+	opacity:0.55;
+	filter: blur(1px);
+	transition: transform 1s linear;
+}
+
+#text{	
+	position:relative;
+}
+
+#text, #text-reflectat{
+	font-size:50px;
+	line-height:50px;
+	font-weight: bold;
+}
+
+#text:hover #text-reflectat {
+    transform:rotateX(180deg) skew(-45deg) scaleY(0.8) translate(10px,-29px);
+}
+
+
+
+
+
+
+

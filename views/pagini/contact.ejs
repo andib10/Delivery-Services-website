@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <title>Prima pagina</title>
+
+    <meta name="keywords" content="telefon, email, adresa">
+    <meta name="description" content="Firma de curierat.">
+
+    <%- include("../fragmente/head.ejs") %>
+
+</head>
+
+<body>
+
+    <%- include("../fragmente/header.ejs") %>
+    <main>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Dorești să ne contactezi? Comunicarea este foarte importantă pentru noi. Indiferent de întrebarea pe care o ai, noi suntem aici să îți răspundem.</p>
+
+            <address>
+                <b><i class="fa-solid fa-phone fa-fade"></i>Telefon: </b>+4071234567<br/>
+                <b>Email: </b>email@andcourier.com<br/>
+                <b>Fax: </b>021 - 631.04.33<br/>
+                <b>Program client service: </b>Suntem aici pentru tine, oferindu-ti  suport telefonic, de Luni pana Duminica in intervalul 09:00-18:00.<br/>
+                <a class="link" href="resurse/imagini/bankInfo.png" download>Bank Info</a>
+            </address>
+            <br/> 
+            
+            <p><b>Intrebari frecvente</b></p>
+            <details>
+                <summary>Pot achita facturile numerar la curier?</summary>
+                <p>Da, facturile pot fi achitate numerar la curier. Acesta va încasa valoarea facturilor și îți va emite chitanța.</p>
+            </details>    
+            <details>
+                <summary>Doresc să modific adresa de livrare, pot primi expediția tot astăzi?</summary>
+                <p>Adresa de livrare poate fi modificată, însă redirecționarea către o adresă nouă înseamnă practic o altă livrare, cu termen mediu de 24 de ore. Așadar, o expediție redirecționată nu se livrează în aceeași zi.</p>
+            </details>
+            <details>
+                <summary>Care este ora maximă la care pot înregistra o comandă telefonică?</summary>
+                <p>Ora maximă până la care se înregistrează comenzile telefonice este ora 19:00 pentru București și ora 16:00 pentru restul țării, dar expediția trebuie să fie pregătită în momentul preluării de către curier.</p>
+            </details>
+            <details>
+                <summary>Am făcut o comanda la un magazin online, am primit un număr de AWB, dar acesta nu apare în sistemul dvs, de ce?</summary>
+                <p>Coletul tău nu a fost încă preluat de curier, AWB-ul neregâsindu-se în baza de date pentru că nu a fost scanat încă. Expediția urmează să apară în sistem de îndată ce coletul va fi preluat de AND Courier de la clientul expeditor.</p>
+            </details>
+            <details>
+                <summary>Am contract cu AND Courier și doresc să obțin mai multe informații cu privire la data emiterii facturilor. Cum procedez?</summary>
+                <p>Facturile se emit bilunar, pe data de 16 și 30/31 a lunii. Toate detaliile cu privire la data emiterii și tipul facturării agreat (Lunar/Bilunar) sunt specificate în contract.</p>
+            </details>
+
+            <br/>
+            <br/>
+            <br/>
+        </section>
+    </main>
+    <%- include("../fragmente/footer.ejs") %>
+</body>
+
+</html>

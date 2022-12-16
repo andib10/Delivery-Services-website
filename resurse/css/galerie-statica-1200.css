@@ -1,0 +1,10 @@
+@media screen and (max-width:1200px) and (min-width:500px) {
+    #grid-galerie{
+      display:grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+    #grid-galerie>*{
+      grid-area: auto !important;
+    }
+
+  }
