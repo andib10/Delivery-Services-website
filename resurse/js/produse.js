@@ -5,6 +5,14 @@ window.addEventListener("load", function() {
         document.getElementById("infoRange").innerHTML = `(${this.value})`
     }
 
+    document.getElementById("i_textarea").oninput = function() {
+        if(!this.value.toLowerCase().trim().match(new RegExp("^[a-zA-Z\- 0-9]*$"))) {
+            this.classList.add("is-invalid");
+        } else {
+            this.classList.remove("is-invalid");
+        }
+    }
+
 
     document.getElementById("filtrare").onclick = function(){
         //verificare inputuri

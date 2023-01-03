@@ -43,3 +43,7 @@ ul.meniu li{
 .text{
     display: none;
 }
+
+ul.meniu ul {
+    position: relative;
+}

@@ -90,3 +90,20 @@ main{
 #grid-div-1 td{
     font-weight: bold;
 }
+
+#containerZile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#inp-zile {
+    width: 200px;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@media screen and (max-width:700px) {
+    .text-buton {display:none}
+    .grid-produse{display:block}
+}
