@@ -47,3 +47,6 @@ ul.meniu li{
 ul.meniu ul {
     position: relative;
 }
+ul.meniu>li:hover{
+    height: auto;
+}

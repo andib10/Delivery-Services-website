@@ -26,7 +26,19 @@ body.dark{
 .dark #titlu{
     color:#242F9B;
 }
+.fa-sun{
+    display: inline;
+}
+.fa-moon{
+    display: none;
+}
 
+.dark .fa-sun{
+    display: none;
+}
+.dark .fa-moon{
+    display: inline;
+}
 
 main{
     background-color: var(--culoare1);
@@ -104,3 +116,31 @@ footer{
    }
 }
 
+#div1{
+    padding:1%;
+    text-align: center;
+}
+#div1>p{
+    font-size: 18px;
+}
+
+#div2{
+    padding: 2% 6% ;
+}
+
+#div3{
+    padding: 6%;
+}
+#div4{
+    padding: 10%;
+}
+
+#div5{
+    padding:13% 6%;
+}
+#div6{
+    padding:12% 7%;
+}
+/* #div7{
+    padding:7% 7%;
+} */

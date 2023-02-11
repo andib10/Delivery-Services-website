@@ -82,7 +82,7 @@
         <span>Categorie:</span>
         <% for (let opt of locals.optiuni) { %>
             <label for="<%-opt.unnest%>"><%-opt.unnest%> 
-                <input id="<%-opt.unnest%> " class="inp-box form-check-input" name="gr_chck" value="<%-opt.unnest%>" type="checkbox"/>
+                <input id="<%-opt.unnest%> " class="inp-box form-check-input" checked name="gr_chck" value="<%-opt.unnest%>" type="checkbox"/>
             </label>
         <% } %>
         <br>
@@ -168,14 +168,30 @@
                             <div id="grid-div-2">
                                 </p>
                                 <figure>
-                                    <a href="/produs/<%-prod.id %>" ><img src="/resurse/imagini/produse/<%- prod.imagine %>" style="width:50%;height:auto;" alt="[imagine <%- prod.nume %>]" /></a>
+                                    <a href="/produs/<%-prod.id %>" ><img src="/resurse/imagini/produse/<%- prod.imagine %>" style="width:50%; height:150px;" alt="[imagine <%- prod.nume %>]" /></a>
                                 </figure>
                             </div>
-                    </div>
-                        <label class="selecteaza-cos">
-                            Selectează:<br/>
-                            <input type="checkbox" class="select-cos" value="<%-prod.id %>" autocomplete="off">
-                        </label>
+                        
+                            <label class="selecteaza-cos">
+                                Selectează:<br/>
+                                <input type="checkbox" class="select-cos" value="<%-prod.id %>" autocomplete="off">
+                            </label>    
+                        </div>
+                        <div class="accordion accordion-flush" id="accordionExample<%-prod.id%>">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="heading<%-prod.id%>">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%-prod.id%>" aria-expanded="false" aria-controls="collapse<%-prod.id%>">
+                                    Descriere:
+                                </button>
+                              </h2>
+                              <div id="collapse<%-prod.id%>" class="accordion-collapse collapse" aria-labelledby="heading<%-prod.id%>" data-bs-parent="#accordionExample<%-prod.id%>">
+                                <div class="accordion-body">
+                                    <%- prod.descriere%>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        
                     </article>
                 <% }%>
             </div>
